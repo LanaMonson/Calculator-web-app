@@ -36,9 +36,9 @@
                     <input type="button" value=" + " onclick ="document.calculator.output.value+='+'"/>
                     <br/>
 
-                    <input type="button" value=" C " />
+                    <input type="button" value=" C " onclick ="document.calculator.output.value=''"/>
                     <input type="button" value=" . " onclick ="document.calculator.output.value+='.'"/>
-                    <input type="button" value=" = " />
+                    <input type="button" value=" = " onclick ="document.calculator.output.value=eval(document.calculator.output.value)"/>
                     <input type="button" value=" % " onclick ="document.calculator.output.value+='%'"/>
                     <br/>
 
