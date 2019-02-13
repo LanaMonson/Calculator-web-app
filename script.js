@@ -4,3 +4,6 @@ function calculate() {
 function erase() {
     document.calculator.output.value = '';
 }
+function entries(s) {
+    document.calculator.output.value+=s;
+}
