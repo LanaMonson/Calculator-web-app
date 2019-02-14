@@ -27,7 +27,12 @@ div#container {
     border: 3px solid #666666;
     margin: 30px auto;
     border-radius: 5px;
-    background-color: #e1e1e1;
+    background-color: #666666;
+    /* CSS3 - Box shadow: h-shadow v-shadow blur spread rgba(red, green, blue, alpha) */
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -ms-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 input[type=text]{
@@ -42,15 +47,23 @@ input[type=text]{
 
 input[type=button] {
     position: relative;
-    background-color: #b3b3b3;
+    background-color: #e1e1e1;
     width: 20%;
     margin: 2%;
     font-size: 20px;
     font-weight: bold;
     color: #505050;
     border-radius: 10%;
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7);
+    -ms-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7);
 }
 
 input[type=button]:hover{
     background-color: #8c8c8c;
+}
+
+input[type=text]:disabled{
+    color: 	#505050;
 }
