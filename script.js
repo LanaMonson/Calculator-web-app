@@ -4,6 +4,11 @@ window.onload = function() {
     container.addEventListener("click", function(e){
         buttonClick(e.target.id);
     });//(e) - default event parameter, calls all info of event
+    var calculator = document.getElementById("button=");
+    calculator.addEventListener("click", calculate);
+
+    var c = document.getElementById("buttonc");
+    c.addEventListener("click", erase);
 
     function buttonClick(buttonId) {
         if((buttonId != "buttonc") && (buttonId != "button=")) {
@@ -16,16 +21,18 @@ window.onload = function() {
 
     function entries(s) {
         input.value += s;
-        /*
-        button1 : s = 1
-        input.value = undefined
-        entries("1")
-        input.value += s
-        input.value = input.value + s = undefined + "1" = "1" //"" + "1" = "1"
-        button1 : s = "2"
-        input.value = "1"
-        entries("2")
-        input.value = input.value + s =  "1" + "2" = "12"
-        */
     }
+
+    function calculate() {
+        if(input.value == ".") {
+            alert("Please enter a mathematical epression");
+            return;
+        }
+        input.value = eval(input.value);
+    }
+    
+    function erase() {
+        input.value = '';
+    }
+
 };
