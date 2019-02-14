@@ -1,13 +1,3 @@
-// function calculate() {
-//     document.calculator.output.value = eval(document.calculator.output.value);
-// }
-// function erase() {
-//     document.calculator.output.value = '';
-// }
-// function entries(s) {
-//     document.calculator.output.value+=s;
-// }
-
 window.onload = function() {
     var input = document.getElementById("inputBox");
     var container = document.getElementById("container");
@@ -22,5 +12,20 @@ window.onload = function() {
             s = s.replace("button","");//string replace function "sub_string to be replaced","sub string you need it replace with"
             entries(s);
         }
+    }
+
+    function entries(s) {
+        input.value += s;
+        /*
+        button1 : s = 1
+        input.value = undefined
+        entries("1")
+        input.value += s
+        input.value = input.value + s = undefined + "1" = "1" //"" + "1" = "1"
+        button1 : s = "2"
+        input.value = "1"
+        entries("2")
+        input.value = input.value + s =  "1" + "2" = "12"
+        */
     }
 };
