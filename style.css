@@ -15,7 +15,7 @@ hr {
 h1 {
     text-align: center;
     font-family: "Courier New";
-    color: #696969;
+    color: #606060;
     height: 50px;
     font-size: 50px;
     padding: 35px;
@@ -27,7 +27,7 @@ div#container {
     border: 3px solid #666666;
     margin: 30px auto;
     border-radius: 5px;
-    background-color: #666666;
+    background-color: #696969;
     /* CSS3 - Box shadow: h-shadow v-shadow blur spread rgba(red, green, blue, alpha) */
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
