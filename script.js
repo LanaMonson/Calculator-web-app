@@ -19,7 +19,8 @@ window.onload = function() {
         if((buttonId != "buttonc") && (buttonId != "button=")) {
             var button = document.getElementById(buttonId);
             var s = buttonId; // s - separate temporary value of button/ string
-            s = s.replace("button","")//string replace function "sub_string to be replaced","sub string you need it replace with"
+            s = s.replace("button","");//string replace function "sub_string to be replaced","sub string you need it replace with"
+            entries(s);
         }
     }
 };
